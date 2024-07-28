@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+    max-width: 95%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 35px; 
+}
+
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+#export{
+    margin-top: 15px;
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+input, button {
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%; 
+}
+
+.defaultButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exportButton{
+    background-color: #00a03d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.defaultButton:hover {
+    background-color: #0056b3;
+}
+
+.exportButton:hover {
+    background-color: #005607;
+}
+
+#transactionList {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+li button {
+    background-color: #dc3545; 
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+
+#chartContainer {
+    margin-top: 20px; 
+    text-align: center;
+}

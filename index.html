@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finances</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/money-icon-transparent-background-10.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.toast.js"></script>
+    <link rel="stylesheet" href="css/jquery.toast.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finances</h1>
+        <h2>Create Transaction</h2>      
+        <form id="transactionForm">
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required><br><br>       
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" step="0.01" required><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>    
+            <button class="defaultButton" type="submit">Add Transaction</button>
+        </form>      
+        <div id="transactionList">
+            <h2>Transactions</h2>
+            <ul id="transactions"></ul>
+        </div>
+        <div id="export">
+            <button class="exportButton" onclick="downloadExcel()">Export Transactions</button>
+        </div>
+        <h2>Transaction chart</h2>
+        <div id="chartContainer">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
